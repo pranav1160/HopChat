@@ -46,6 +46,7 @@ struct HeroCellView: View {
     }
 }
 
+
 #Preview {
     ScrollView{
         VStack{

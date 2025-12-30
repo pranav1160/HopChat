@@ -16,6 +16,7 @@ struct SettingsView: View {
     
     @Environment(\.dismiss) private var dismiss
     @Environment(AppState.self) private var appstate
+    
     var body: some View {
         NavigationStack {
             List {

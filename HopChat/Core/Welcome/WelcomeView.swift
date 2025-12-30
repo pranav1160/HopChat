@@ -41,7 +41,7 @@ struct WelcomeView: View {
     
     private var title: some View {
         VStack(spacing: 8) {
-            Text("ChatterFly 🦋")
+            Text("HopChat 🦋")
                 .font(.largeTitle)
                 .bold()
             

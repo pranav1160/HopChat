@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class ChatterFlyUITestsLaunchTests: XCTestCase {
+final class HopChatUITestsLaunchTests: XCTestCase {
 
     override static var runsForEachTargetApplicationUIConfiguration: Bool {
         true
