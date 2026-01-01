@@ -7,4 +7,3 @@
 import FirebaseAuth
 
 typealias FirebaseUser = FirebaseAuth.User
-
