@@ -11,6 +11,7 @@
 		812471922F0462FC00CAB459 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 812471912F0462FC00CAB459 /* FirebaseCore */; };
 		8180F5082F4C8FA00048C036 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8180F5072F4C8FA00048C036 /* SDWebImage */; };
 		8180F50D2F4CA8DE0048C036 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 8180F50C2F4CA8DE0048C036 /* GoogleSignIn */; };
+		8180F50F2F4CA9000048C036 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8180F50E2F4CA9000048C036 /* GoogleService-Info.plist */; };
 		8191A07E2EAB015F00CF7407 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8191A07D2EAB015F00CF7407 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		8161A5902E9BF06900F50D0A /* HopChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8161A59D2E9BF06A00F50D0A /* HopChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8161A5A72E9BF06A00F50D0A /* HopChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8180F50E2F4CA9000048C036 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -105,6 +107,7 @@
 				8161A5A02E9BF06A00F50D0A /* HopChatTests */,
 				8161A5AA2E9BF06A00F50D0A /* HopChatUITests */,
 				8161A5912E9BF06900F50D0A /* Products */,
+				8180F50E2F4CA9000048C036 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8180F50F2F4CA9000048C036 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
