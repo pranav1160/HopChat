@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		812471902F0462FC00CAB459 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8124718F2F0462FC00CAB459 /* FirebaseAuth */; };
 		812471922F0462FC00CAB459 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 812471912F0462FC00CAB459 /* FirebaseCore */; };
+		8180F5082F4C8FA00048C036 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8180F5072F4C8FA00048C036 /* SDWebImage */; };
+		8180F50D2F4CA8DE0048C036 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 8180F50C2F4CA8DE0048C036 /* GoogleSignIn */; };
 		8191A07E2EAB015F00CF7407 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8191A07D2EAB015F00CF7407 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
@@ -35,9 +37,22 @@
 		8161A5A72E9BF06A00F50D0A /* HopChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8180F5132F4CB53D0048C036 /* Exceptions for "HopChat" folder in "HopChat" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8161A58F2E9BF06900F50D0A /* HopChat */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8161A5922E9BF06900F50D0A /* HopChat */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8180F5132F4CB53D0048C036 /* Exceptions for "HopChat" folder in "HopChat" target */,
+			);
 			path = HopChat;
 			sourceTree = "<group>";
 		};
@@ -58,8 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8180F50D2F4CA8DE0048C036 /* GoogleSignIn in Frameworks */,
 				8191A07E2EAB015F00CF7407 /* SDWebImageSwiftUI in Frameworks */,
 				812471922F0462FC00CAB459 /* FirebaseCore in Frameworks */,
+				8180F5082F4C8FA00048C036 /* SDWebImage in Frameworks */,
 				812471902F0462FC00CAB459 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +142,8 @@
 				8191A07D2EAB015F00CF7407 /* SDWebImageSwiftUI */,
 				8124718F2F0462FC00CAB459 /* FirebaseAuth */,
 				812471912F0462FC00CAB459 /* FirebaseCore */,
+				8180F5072F4C8FA00048C036 /* SDWebImage */,
+				8180F50C2F4CA8DE0048C036 /* GoogleSignIn */,
 			);
 			productName = ChatterFly;
 			productReference = 8161A5902E9BF06900F50D0A /* HopChat.app */;
@@ -211,6 +230,8 @@
 			packageReferences = (
 				8191A07C2EAB015F00CF7407 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				8124718E2F0462FC00CAB459 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8180F5062F4C8FA00048C036 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				8180F50B2F4CA8DE0048C036 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8161A5912E9BF06900F50D0A /* Products */;
@@ -440,6 +461,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HopChat/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = HopChat;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -479,6 +501,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HopChat/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = HopChat;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -641,6 +664,22 @@
 				minimumVersion = 12.7.0;
 			};
 		};
+		8180F5062F4C8FA00048C036 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.6;
+			};
+		};
+		8180F50B2F4CA8DE0048C036 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
 		8191A07C2EAB015F00CF7407 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -661,6 +700,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8124718E2F0462FC00CAB459 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCore;
+		};
+		8180F5072F4C8FA00048C036 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8180F5062F4C8FA00048C036 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		8180F50C2F4CA8DE0048C036 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8180F50B2F4CA8DE0048C036 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 		8191A07D2EAB015F00CF7407 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;

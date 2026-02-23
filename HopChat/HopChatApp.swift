@@ -14,6 +14,7 @@ struct HopChatApp: App {
     var body: some Scene {
         WindowGroup {
             AppView()
+                .environment(\.authService, FireBaseAuthService())
         }
     }
 }

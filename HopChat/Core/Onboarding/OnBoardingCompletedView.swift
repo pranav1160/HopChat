@@ -41,7 +41,6 @@ struct OnBoardingCompletedView: View {
     }
     
     private var ctaButton: some View {
-       
         AsyncCallToActionButton(
             isLoading: isProfileSetupFinishing,
             title: "Finish",

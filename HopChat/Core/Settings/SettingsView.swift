@@ -60,7 +60,6 @@ struct SettingsView: View {
                 showAlert = AnyAppAlert(error: error)
             }
         }
-
     }
     
     func onDeleteAccountPressed() {
@@ -185,11 +184,29 @@ struct SettingsView: View {
     }
 }
 
-#Preview {
+#Preview("No auth") {
     SettingsView()
-        .environment(AppState(showTabBar: true))
+        .environment(\.authService, MockAuthService(user: nil))
+        .environment(AppState())
 }
 
+#Preview("Anonymous") {
+    SettingsView()
+        .environment(
+            \.authService,
+             MockAuthService(user: UserAuthInfo.mock(isAnonymous: true))
+        )
+        .environment(AppState())
+}
+
+#Preview("Not anonymous") {
+    SettingsView()
+        .environment(
+            \.authService,
+             MockAuthService(user: UserAuthInfo.mock(isAnonymous: false))
+        )
+        .environment(AppState())
+}
 
 fileprivate extension View{
     func rowFormatClickable() -> some View{
